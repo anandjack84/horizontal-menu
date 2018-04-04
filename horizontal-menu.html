@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>SPORTS HUB</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        
+        <!-- Fav-icon -->
+		<link rel="shortcut icon" type="image/png" href="/"/>
+
+        <!-- Main css -->
+        <link rel="stylesheet" href="style.css"/>
+        
+	</head>
+    <body>
+       
+                <button class="nav">
+                    <span class="icon-container">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                        <span class="line line04"></span>
+                    </span>
+                </button>
+                <div class="works-filter">
+                    <a href="#" >All</a>
+                    <a href="#" >Branding</a>
+                    <a href="#" >Web Design</a>
+                    <a href="#" >Graphic Design</a>
+                </div>
+
+
+        
+        <!-- minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Custom JavaScript -->
+        <script>
+            // Switch class on filter
+            var showfilter = jQuery('.works-filter');
+            jQuery('button.nav').on('click', function() {
+                var self = jQuery(this);
+                self.toggleClass('open');
+                showfilter.toggleClass('open');
+            });
+        </script>
+    </body>
+</html>    
